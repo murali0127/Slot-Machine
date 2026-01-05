@@ -1,0 +1,228 @@
+.background {
+    background-image: url('bg_small.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    /* background-color:  blue; */
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot-app {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25%;
+}
+
+.game-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(181, 83, 179);
+    text-shadow: 1px 4px 4px #090609;
+    -webkit-text-stroke: .5px rgb(72, 14, 66);
+}
+
+#heading1 {
+    font-size: 2rem;
+    color: #b3311d;
+    -webkit-text-stroke: .6px rgb(20, 14, 14);
+}
+
+.player-info {
+    font-size: 0.9;
+    opacity: .8;
+    margin-bottom: 10px;
+    font-display: block;
+    color: rgb(181, 203, 209);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    /* color: rgb(165, 6, 162); */
+    /* text-decoration: underline; */
+    /* font-display:block; */
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* text-decoration: ; */
+}
+
+header {
+    color: #c92828;
+}
+
+.slot-machine {
+    /* display: flex; */
+    background: #0f0f1a;
+    outline: 2px solid rgb(139, 183, 202);
+    border-radius: 15px;
+    justify-content: center;
+    padding: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 50px #25658c;
+}
+
+.reels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+body {
+    justify-content: center;
+    display: flex;
+}
+
+.reel-column {
+    background: linear-gradient(180deg, #141423, #1e1e32);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30ch;
+    height: 25ch;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+
+    box-shadow: inset 0 8px 8px 8px rgba(30, 112, 105, 0.7);
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.symbol {
+    font-size: 1.3rem;
+    background: #374874;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+
+.spin-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-style: groove;
+    background: linear-gradient(180deg, #ffa41b, #ce3939);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #fdfbf8;
+    margin-left: 100px;
+    box-shadow: 2px 5px 5px rgb(97, 41, 41);
+
+
+}
+
+/* button{
+    transition: all .5s ease;
+
+} */
+
+.bet-btn-minus:hover {
+    background: #a73e3e;
+}
+
+.spin-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.spin-btn:hover {
+    filter: brightness(1.5);
+    background: #c05412;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 35px rgba(113, 46, 28, 0.35);
+
+}
+
+.spin-btn:active {
+    transform: translateY(.7px) scale(1.1);
+}
+
+.bet-controls {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(212, 208, 208);
+
+
+}
+
+.bet-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bet-btn {
+    width: 30px;
+    height: 30px;
+    border-style: groove;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #d4a35a, #62240b);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(101, 75, 40);
+
+
+
+}
+
+.bet-btn:hover {
+    box-shadow: 0px 0px 20px #7b4714;
+    background: linear-gradient(180deg, #a06f32, rgb(185, 144, 81));
+
+    transform: translateY(-3px) scale(1.05);
+}
+
+.bet-btn:active {
+    transform: translateY(.5px) scale(1.2);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1rem;
+    opacity: .8;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: #b09595;
+    font-weight: 700;
+
+}
+
+h3 {
+    text-align: center;
+    font-family: cursive;
+    color: hsl(332, 73%, 24%);
+}
