@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="card mt-6 ml-6 mr-6">
+      <div class="card-content">
+            <h1 class="title has-title has-text-centered">Create an Account</h1>
+            <p class="subtitle is-small has-text-centered">sign-up!!!</p>
+            <!-- FLAAH MESSAGE DISPLAY-->
+            {% with message = get_flashed_messages(with_categories= True) %}
+            {% if msg %}
+            {% for category, msg in messags %}
+            {% if category == 'error' %}
+            <div class="notification is-danger is-light">
+                  <button class="delete">
+                        {{msg}}
+                  </button>
+            </div>
+            {% else %}
+            <div class="notification">
+                  <button class="delete"></button>
+                  {{msg}}
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+            <form method="POST">
+                  <!-- USERNAME -->
+                  <div class="field">
+                        <label for="Username" class="label">Username : </label>
+                        <div class="control has-icons-left">
+                              <span class="icon is-small-is-right"><i class="fa-solid fa-user"></i></span>
+                              <input type="text" name="userName" class="input is-hovered" id="Username"
+                                    placeholder="Name" />
+                        </div>
+                  </div>
+                  <!-- EMAIL -->
+                  <div class="field">
+                        <label for="staticEmail" class="label">Email : </label>
+                        <div class="control has-icons-left">
+                              <span class="icon is-small-is-right"><i class="fa-solid fa-envelope"></i></span>
+                              <input type="text" name="email" class="input is-hovered" id="staticEmail"
+                                    placeholder="example@gmail.com" />
+                        </div>
+                  </div>
+
+                  <!-- PASSWORD -->
+                  <div for="password" class="field">
+                        <label class="label">Password : </label>
+                        <div class="control has-icons-left">
+                              <span class="icon is-small-is-right"><i class="fa-solid fa-key"></i></i></span>
+                              <input type="password" name="password1" class="input is-hovered" id="password"
+                                    placeholder="password" />
+                        </div>
+                  </div>
+
+                  <div class="field">
+                        <button class="button is-warning is-fullwidth">Login</button>
+                  </div>
+
+            </form>
+      </div>
+</div>
+{% endblock %}

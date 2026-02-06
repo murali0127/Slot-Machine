@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SlotMachine</title>
+    <meta charset="utf-8">
+    <!-- BULMA CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/website/static/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="background"></div>
+    <!-- <p>hello {{placeholder}}</p> -->
+    <div class="slot-app">
+        <header class="spin-header">
+            <h1 class="game-title">Welcome to Slot Machine</h1>
+            <h2 class="game-title" id="heading1">Lucky Spin</h2>
+
+            <div class="player-info">
+                <span class="label">Balance</span>
+                <span class="balance-amount">$1000</span>
+            </div>
+        </header>
+
+        <!-- Main Slot Area-->
+        <main class="slot-machine">
+            <section class="reels">
+                <!--column -1 -->
+                <div class="reel-column">
+                    <div class="reel-strip">
+                        <div class="symbol">🍒</div>
+                        <div class="symbol">🔔</div>
+                        <div class="symbol">💎</div>
+                    </div>
+                </div>
+
+                <!--column -2 -->
+                <div class="reel-column">
+                    <div class="reel-strip">
+                        <div class="symbol">🍋</div>
+                        <div class="symbol">🎰</div>
+                        <div class="symbol">🍀</div>
+                    </div>
+                </div>
+                <!--column -3 -->
+                <div class="reel-column">
+                    <div class="reel-strip">
+                        <div class="symbol">💎</div>
+                        <div class="symbol">🍒</div>
+                        <div class="symbol">🔔</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Controls -->
+
+        <section class="bet-controls">
+            <div class="bet-buttons">
+                <button class="bet-btn" id="bet-minus">&minus;</button>
+                <span class="bet-amount" id="bet-display">Bet: $50</span>
+                <button class="bet-btn" id="bet-plus">&plus;</button>
+            </div>
+            <button class="spin-btn">SPIN</button>
+        </section>
+
+        <!-- Result/status -->
+        <footer class="footer">
+            <p class="status-msg">Press SPIN to Play</p>
+            <h3>Win Exciting Cash!!</h3>
+        </footer>
+    </div>
+
+    <audio id="winAudio" src="/website/static/sounds/preview.mp3" preload="auto"></audio>
+    <audio id="lossAudio" src="/website/static/sounds/lossAudio.mp3" preload="auto"></audio>
+    <audio id="spinAudio" src="/website/static/sounds/spin.wav" preload="auto"></audio>
+
+    <script src="/website/static/index.js"></script>
+</body>
+
+</html>
